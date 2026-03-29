@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <button id="minus" onclick="minus1()">-</button>
+            <p id="number"></p>
+            <button id="plus" onclick="add1()">+</button>
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+    <script>
+        let plus = document.getElementById("plus");
+        let minus = document.getElementById("minus");
+        let reset = document.getElementById("reset");
+        let num = document.getElementById("number");
+
+        let value = 0;
+        num.innerText = value;
+        
+        // function add1(){
+        //     value++;
+        //     num.innerText = value;
+        // }
+        
+        // function minus1(){
+        //     value--;
+        //     num.innerText = value;
+        // }
+
+//This is the correct way of doing it;
+        plus.addEventListener("click", function(){
+            value++;
+            num.innerText = value;
+        })
+
+        minus.addEventListener("click", function(){
+            if(value > 0){
+                value--;
+                num.innerText = value;
+            }
+        })
+
+        reset.addEventListener("click", function(){
+            value = 0;
+            num.innerText = value;
+        })
+    </script>
+</body>
+</html>
