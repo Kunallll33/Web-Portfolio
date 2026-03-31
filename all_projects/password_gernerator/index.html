@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <span id="passBox">Generate Password</span>
+
+            <!-- Password Length -->
+            <div class="row">
+                <label for="Pass-size">
+                    <div class="left">
+                        Password Length
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="number" name="" id="total-Char" max="30" min="2" value="10">
+                </div>
+            </div>
+
+            <!-- UpperCase -->
+            <div class="row">
+                <label for="upperCase">
+                    <div class="left">
+                        Contain Uppercase
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="upperCase" checked>
+                </div>
+            </div>
+
+            <!-- LowerCase -->
+            <div class="row">
+                <label for="lowercase">
+                    <div class="left">
+                        Contain Lowercase
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" id="lowerCase">
+                </div>
+            </div>
+
+            <!-- Numbers -->
+            <div class="row">
+                <label for="numbers">
+                    <div class="right">
+                        Contain Numbers
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="numbers">
+                </div>
+            </div>
+
+            <!-- Special Symbols -->
+            <div class="row">
+                <label for="specialSymbol">
+                    <div class="left">
+                        Contain Special Symbols
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="specialSymbol">
+                </div>
+            </div>
+
+            <button id="btn">Generate</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

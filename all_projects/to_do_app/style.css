@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    height: 60vh;
+    width: 20%;
+    background-color: beige;
+    border-radius: 6px;
+}
+
+.upper-note {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.upper-note h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+#input {
+    height: 2.5rem;
+    padding: 0 0.75rem;
+}
+
+#addBtn {
+    height: 2.5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.delete-Btn {
+    height: 1.5rem;
+    cursor: pointer;
+    
+}
+li {
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    padding: 1rem;
+}
